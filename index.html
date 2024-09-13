@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<script type="module" src="./js/main.js" defer></script>
+	<title>ArtGallery_Fauroro</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar" id="navbar">
+			<h2>Fauroro's Gallery</h2>
+			<a href="#desp" class="navTarget">&#8801</a>
+			<div class="menu" id="desp">
+				<a href="#carousel" class="aMenu">Exhibitions</a>
+				<a href="#gallery" class="aMenu">Gallery</a>
+				<a href="#carousel" class="aMenu">Events</a>
+				<a href="#visit" class="aMenu">Visit Us</a>
+				<a href="#" class="cerrar-menu">&#215</a>
+			</div>
+		</nav>
+	</header>
+	<div class="up">
+		<a href="#carousel"><i class="bx bx-chevrons-up"></i></a>
+	</div>
+
+	<section id="carousel">
+		<div class="carousel-container">
+			<div class="carousel-slide">
+				<div class="slide slide1">
+					<div class="slide-content">
+						<h2>Título 1</h2>
+						<p>Descripción para la imagen 1</p>
+					</div>
+				</div>
+				<div class="slide slide2">
+					<div class="slide-content">
+						<h2>Título 2</h2>
+						<p>Descripción para la imagen 2</p>
+					</div>
+				</div>
+				<div class="slide slide3">
+					<div class="slide-content">
+						<h2>Título 3</h2>
+						<p>Descripción para la imagen 3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="prevBtn" onclick="moveSlide(-1)">&#10094;</button>
+		<button class="nextBtn" onclick="moveSlide(1)">&#10095;</button>
+
+	</section>
+
+	<section id="gallery">
+		<div class="grid-container">
+			<div class="grid-item tall" style="background-image: url('https://picsum.photos/id/22/4434/3729');"></div>
+			<div class="grid-item wide" style="background-image: url('https://picsum.photos/id/29/4000/2670');"></div>
+			<div class="grid-item tall wide" style="background-image: url('https://picsum.photos/id/2/5000/3333');"></div>
+			<div class="grid-item" style="background-image: url('https://picsum.photos/id/40/4106/2806');"></div>
+			<div class="grid-item" style="background-image: url('https://picsum.photos/id/61/3264/2448');"></div>
+			<div class="grid-item" style="background-image: url('https://picsum.photos/id/84/1280/848');"></div>
+			<div class="grid-item" style="background-image: url('https://picsum.photos/id/96/4752/3168');"></div>
+		</div>
+
+	</section>
+
+	<section id="visit">
+		<div class="visit-container">
+			<div>
+				<i class='bx bxs-hourglass'></i>
+				<h3>Opening Hours</h3>
+				<p>Tuesday - Sunday: 10am - 5pm</p>
+				<p>Closed on Mondays</p>
+			</div>
+			<div>
+				<i class='bx bx-current-location'></i>
+				<h3>Location</h3>
+				<p>Fake Street 123</p>
+				<p>Springfield, State 12345</p>
+			</div>
+			<div>
+				<i class='bx bx-image'></i>
+				<h3>Current Exhibitions</h3>
+				<p>"Abstract Art"</p>
+				<p>Until December 28, 2023</p>
+
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-content">
+			<p>&copy; 2024 Fauroro. All rights reserved.</p>
+			<div class="footer-links">
+				<a href="#terms">Terms of Service</a>
+				<a href="#privacy">Privacy</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

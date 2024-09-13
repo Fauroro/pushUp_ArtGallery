@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    padding-top: 80px;
+    /* El padding debe ser igual a la altura del navbar */
+}
+
+a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+header {
+    background-color: #3c3c3c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.up i {
+    padding: 10px;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    background-color: #3859ed;
+    padding: 0;
+    width: fit-content;
+    border-radius: 50%;
+    font-size: 2rem;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 20px;
+    padding-left: 60px;
+    margin: 0 auto;
+}
+
+.navbar h2 {
+    color: #ff702a;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.aMenu {
+    padding: 0px 20px;
+    transition: 0.4s;
+}
+
+.navTarget,
+.cerrar-menu {
+    display: none;
+    cursor: pointer;
+    order: 1;
+}
+
+.aMenu:hover {
+    background-color: #469778;
+}
+
+.cerrar-menu {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none
+}
+
+#carousel {
+    position: relative;
+    /* Asegúrate de que el contenedor del carrusel sea el contenedor de los botones */
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f4f4f4;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide .slide {
+    width: 100%;
+    flex: 0 0 100%;
+    /* Importante para que cada div sea un slide independiente */
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.slide {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slide1 {
+    background: url(".././images/background-6556410_1280.jpg") center center no-repeat;
+}
+
+.slide2 {
+    background: url(".././images/city-3120192_1280.jpg") center center no-repeat;
+}
+
+.slide3 {
+    background: url(".././images/corridor-4930352_1280.jpg") center center no-repeat;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+.slide-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    font-size: 16px;
+}
+
+/* Botones de navegación */
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.prevBtn {
+    left: 10px;
+}
+
+.nextBtn {
+    right: 10px;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#gallery{
+    padding-top: 80px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    border: solid 1px rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.27);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+#visit {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+
+.visit-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0px 20px;
+    padding-left: 60px;
+}
+
+.visit-container i {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff702a;
+}
+
+
+
+@media (max-width: 768px) {
+    .navTarget {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #3c3c3c9e;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px;
+        z-index: 1;
+        clip-path: circle(0% at top right);
+        transition: clip-path 0.6s;
+    }
+
+    .menu:target {
+        clip-path: circle(150% at top right);
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .cerrar-menu {
+        position: absolute;
+        top: 5px;
+        right: -1.5px;
+    }
+
+    .prevBtn,
+    .nextBtn {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .carousel-container {
+        width: 90%;
+    }
+
+    .prevBtn,
+    .nextBtn {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .slide-content h2 {
+        font-size: 20px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        margin: 5px 0;
+    }
+
+}
