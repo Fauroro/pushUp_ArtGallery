@@ -1,7 +1,7 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
-const intervalTime = 4000; // Tiempo en milisegundos (3 segundos)
+const intervalTime = 4000;
 
 // Función para cambiar de imagen
 function moveSlide(direction) {
@@ -19,21 +19,20 @@ function moveSlide(direction) {
 
 // Función para cambiar automáticamente
 function autoSlide() {
-    moveSlide(1); // Mueve a la siguiente imagen
+    moveSlide(1);
 }
 
 // Iniciar el intervalo para el cambio automático
 const slideInterval = setInterval(autoSlide, intervalTime);
 
-// Agregar eventos a los botones
 document.querySelector('.prevBtn').addEventListener('click', () => {
     moveSlide(-1);
-    resetInterval(); // Reinicia el intervalo al hacer clic manualmente
+    resetInterval();
 });
 
 document.querySelector('.nextBtn').addEventListener('click', () => {
     moveSlide(1);
-    resetInterval(); // Reinicia el intervalo al hacer clic manualmente
+    resetInterval();
 });
 
 // Reinicia el intervalo cuando se navega manualmente
