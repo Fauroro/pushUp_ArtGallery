@@ -190,8 +190,9 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#gallery{
+#gallery {
     padding-top: 80px;
+    justify-content: center;
 }
 
 .grid-item {
@@ -231,23 +232,40 @@ header {
 
 #visit {
     text-align: center;
-    padding: 20px;
-    margin: 20px;
-    font-size: 1.1rem;
-    transition: all 0.4s ease;
+    padding: 40px 20px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
 }
 
 .visit-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding: 0px 20px;
-    padding-left: 60px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.visit-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
 }
 
 .visit-container i {
+    font-size: 2rem;
+    color: #3859ed;
+    margin-bottom: 10px;
+}
+
+.visit-container h3 {
     font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.visit-container p {
+    font-size: 1.1rem;
+    margin: 0;
 }
 
 footer {
@@ -350,20 +368,45 @@ footer {
         font-size: 14px;
     }
 
+    #visit {
+        padding: 20px 10px;
+    }
+
+    .visit-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .visit-container div {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .visit-container i {
+        font-size: 1.5rem;
+    }
+
+    .visit-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .visit-container p {
+        font-size: 1rem;
+    }
+
     .footer-content {
         flex-direction: column;
-        align-items: flex-start;
         text-align: center;
     }
 
     .footer-links {
-        margin-top: 10px;
         flex-direction: column;
-        align-items: center;
+        margin-top: 20px;
     }
 
     .footer-links a {
-        margin: 5px 0;
+        margin: 10px 0;
+        font-size: 16px;
     }
 
 }
