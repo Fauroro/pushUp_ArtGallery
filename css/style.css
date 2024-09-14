@@ -15,6 +15,7 @@ html {
 
 body {
     padding-top: 80px;
+    background-color: #ff712a2c;
 }
 
 a {
@@ -74,7 +75,7 @@ header {
 }
 
 .aMenu:hover {
-    background-color: #469778;
+    background-color: #ff702a;
 }
 
 .cerrar-menu {
@@ -190,7 +191,24 @@ header {
 #gallery {
     padding-top: 80px;
     justify-content: center;
-    perspective: 1000px; 
+    perspective: 1000px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.gallery-header {
+    padding: 20px;
+    background-color: #3c3c3cc5;
+    color: #ff702a;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.gallery-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .grid-container {
